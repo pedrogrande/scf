@@ -100,7 +100,7 @@ section {
 #headerwrap h2 {
   color: white;
   font-weight: 400;
-  margin-bottom: 40px;
+  margin: 10px;
   text-transform: uppercase;
 }
 #headerwrap p {
@@ -111,7 +111,7 @@ section {
   font-weight: 900;
   font-size: 150px;
   color: #FFF;
-  text-shadow: 0px 4px 0px #f0ad4e;
+  /*text-shadow: 0px 4px 0px #f0ad4e;*/
 }
 
 .form-control {
@@ -133,10 +133,25 @@ section {
           transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
 }
 
-
+.btn-warning {
+  color: #ffffff;
+  background-color: #ed9c28;
+  border-color: #f0ad4e;
+  font-weight: 700;
+  border-width: 0 1px 6px 1px;
+}
+.btn-warning:hover,
+.btn-warning:focus,
+.btn-warning:active,
+.btn-warning.active,
+.open .dropdown-toggle.btn-warning {
+  color: #ffffff;
+  background-color: #f0ad4e;
+  border-color: #eb9316;
+}
 .btn-xl,
 .btn-group-xl > .btn {
-  padding: 18px 26px;
+  padding: 16px 26px;
   font-size: 20px;
  /* line-height: 1.33;
   border-radius: 6px;*/
