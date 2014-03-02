@@ -1,32 +1,23 @@
-<nav class="navbar navbar-inverse" role="navigation">
-  <div class="container">
-    <!-- Brand and toggle get grouped for better mobile display -->
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-        <span class="sr-only">Menu</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" href="https://thecoderfactory.com">The Coder Factory</a>
+<div id="navbar-main">
+      <!-- Fixed navbar -->
+    <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="icon icon-shield" style="font-size:30px; color:#3498db;"></span>
+          </button>
+          <a class="navbar-brand hidden-xs hidden-sm" href="#home"><span class="icon icon-shield" style="font-size:18px; color:#3498db;"></span></a>
+        </div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="#home" class="smoothScroll">Home</a></li>
+      <li> <a href="#about" class="smoothScroll"> About</a></li>
+      <li> <a href="#services" class="smoothScroll"> Services</a></li>
+      <li> <a href="#team" class="smoothScroll"> Team</a></li>
+      <li> <a href="#portfolio" class="smoothScroll"> Portfolio</a></li>
+      <li> <a href="#blog" class="smoothScroll"> Blog</a></li>
+      <li> <a href="#contact" class="smoothScroll"> Contact</a></li>
+        </div><!--/.nav-collapse -->
+      </div>
     </div>
-
-    <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse">
-      <ul class="nav navbar-nav">
-        <li class="active"><a href="/"><i class="fa fa-home"></i> Home</a></li>
-        <li><a href="#"><i class="fa fa-link"></i> Link</a></li>
-        
-      </ul>
-      <ul class="nav navbar-nav pull-right">
-        <% if user_signed_in? %>
-          <li><%= link_to 'Edit account', edit_user_registration_path %></li>
-          <li><%= link_to 'Logout', destroy_user_session_path, :method=>'delete' %></li>
-        <% else %>
-          <li><%= link_to 'Login', new_user_session_path %></li>
-          <li><%= link_to 'Sign up', new_user_registration_path %></li>
-        <% end %>
-      </ul>
-    </div><!-- /.navbar-collapse -->
-  </div><!-- /.container-fluid -->
-</nav>
+    </div>
