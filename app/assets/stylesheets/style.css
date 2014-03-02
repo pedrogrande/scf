@@ -84,22 +84,22 @@ section {
   min-height: 20px;
   padding: 19px;
   margin-bottom: 20px;
-  background-color: rgba(52, 152, 219,0.8);
+  background-color: rgba(52, 152, 219,0.7);
   border: 1px solid rgba(52, 152, 219,1.0);
   border-radius: 4px;
   -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .05);
           box-shadow: inset 0 1px 1px rgba(0, 0, 0, .05);
 }
 #headerwrap h2 {
-  color: rgba(241, 196, 15,1.0);
+  color: white;
   font-weight: 400;
 }
 #headerwrap p {
-  color: rgba(241, 196, 15,1.0);
+  color: white;
 }
-#headerwrap h1 {
+/*#headerwrap h1 {
   color: rgba(52, 152, 219,1);
-}
+}*/
 .btn-xl,
 .btn-group-xl > .btn {
   padding: 16px 26px;
