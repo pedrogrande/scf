@@ -94,6 +94,12 @@ section {
   color: rgba(241, 196, 15,1.0);
   font-weight: 400;
 }
+#headerwrap p {
+  color: rgba(241, 196, 15,1.0);
+}
+#headerwrap h1 {
+  color: rgba(52, 152, 219,1);
+}
 .btn-xl,
 .btn-group-xl > .btn {
   padding: 16px 26px;
