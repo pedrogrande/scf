@@ -57,7 +57,7 @@ group :development do
   gem 'rails_best_practices'
   gem 'seed_dump'
   gem 'brakeman', :require => false
-  # gem 'railroady'
+  gem 'railroady'
 end
 group :production do
 	gem 'pg'
