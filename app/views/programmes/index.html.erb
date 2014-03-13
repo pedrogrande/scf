@@ -1,0 +1,31 @@
+<h1>Listing programmes</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>User</th>
+      <th>Start date time</th>
+      <th>End date time</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @programmes.each do |programme| %>
+      <tr>
+        <td><%= programme.user %></td>
+        <td><%= programme.start_date_time %></td>
+        <td><%= programme.end_date_time %></td>
+        <td><%= link_to 'Show', programme %></td>
+        <td><%= link_to 'Edit', edit_programme_path(programme) %></td>
+        <td><%= link_to 'Destroy', programme, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Programme', new_programme_path %>

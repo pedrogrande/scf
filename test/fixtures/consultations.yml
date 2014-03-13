@@ -1,0 +1,27 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  user_id: 
+  name: MyString
+  phone: MyString
+  email: MyString
+  message: MyText
+  date_time: 2014-03-13 12:08:01
+  length_in_minutes: 1
+  comfirmed: false
+  notes: MyText
+  actions: MyText
+  consultation_type: MyString
+
+two:
+  user_id: 
+  name: MyString
+  phone: MyString
+  email: MyString
+  message: MyText
+  date_time: 2014-03-13 12:08:01
+  length_in_minutes: 1
+  comfirmed: false
+  notes: MyText
+  actions: MyText
+  consultation_type: MyString

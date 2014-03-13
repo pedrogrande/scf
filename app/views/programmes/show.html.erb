@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>User:</strong>
+  <%= @programme.user %>
+</p>
+
+<p>
+  <strong>Start date time:</strong>
+  <%= @programme.start_date_time %>
+</p>
+
+<p>
+  <strong>End date time:</strong>
+  <%= @programme.end_date_time %>
+</p>
+
+<%= link_to 'Edit', edit_programme_path(@programme) %> |
+<%= link_to 'Back', programmes_path %>

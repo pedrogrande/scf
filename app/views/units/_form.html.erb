@@ -1,0 +1,35 @@
+<%= simple_form_for(@unit) do |f| %>
+  <%= f.error_notification %>
+
+  <div class="form-group">
+    <%= f.association :unit_type, input_html: { class: 'form-control'} %>
+  </div>
+  <div class="form-group">
+    <%= f.input :name, input_html: { class: 'form-control'} %>
+  </div>
+  <div class="form-group">
+    <%= f.input :tagline, input_html: { class: 'form-control'} %>
+  </div>
+  <div class="form-group">
+    <%= f.input :description, input_html: { class: 'form-control'} %>
+  </div>
+  <div class="form-group">
+    <%= f.input :hours, input_html: { class: 'form-control'} %>
+  </div>
+  <div class="form-group">
+    <%= f.input :points, input_html: { class: 'form-control'} %>
+  </div>
+  <div class="form-group">
+    <%= f.input :difficulty, input_html: { class: 'form-control'} %>
+  </div>
+  <div class="form-group">
+    <%= f.input :online, input_html: { class: 'form-control'} %>
+  </div>
+  <div class="form-group">
+    <%= f.input :offline, input_html: { class: 'form-control'} %>
+  </div>
+
+  <div class="form-group">
+    <%= f.button :submit %>
+  </div>
+<% end %>

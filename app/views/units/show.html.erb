@@ -1,0 +1,49 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Unit type:</strong>
+  <%= @unit.unit_type %>
+</p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @unit.name %>
+</p>
+
+<p>
+  <strong>Tagline:</strong>
+  <%= @unit.tagline %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @unit.description %>
+</p>
+
+<p>
+  <strong>Hours:</strong>
+  <%= @unit.hours %>
+</p>
+
+<p>
+  <strong>Points:</strong>
+  <%= @unit.points %>
+</p>
+
+<p>
+  <strong>Difficulty:</strong>
+  <%= @unit.difficulty %>
+</p>
+
+<p>
+  <strong>Online:</strong>
+  <%= @unit.online %>
+</p>
+
+<p>
+  <strong>Offline:</strong>
+  <%= @unit.offline %>
+</p>
+
+<%= link_to 'Edit', edit_unit_path(@unit) %> |
+<%= link_to 'Back', units_path %>

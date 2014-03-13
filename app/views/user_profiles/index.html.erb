@@ -1,0 +1,49 @@
+<h1>Listing user_profiles</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Phone</th>
+      <th>Tagline</th>
+      <th>About</th>
+      <th>Image</th>
+      <th>Facebook</th>
+      <th>Linkedin</th>
+      <th>Googlegithub</th>
+      <th>Twitter</th>
+      <th>Blog</th>
+      <th>Show email</th>
+      <th>User</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @user_profiles.each do |user_profile| %>
+      <tr>
+        <td><%= user_profile.name %></td>
+        <td><%= user_profile.phone %></td>
+        <td><%= user_profile.tagline %></td>
+        <td><%= user_profile.about %></td>
+        <td><%= user_profile.image %></td>
+        <td><%= user_profile.facebook %></td>
+        <td><%= user_profile.linkedin %></td>
+        <td><%= user_profile.googlegithub %></td>
+        <td><%= user_profile.twitter %></td>
+        <td><%= user_profile.blog %></td>
+        <td><%= user_profile.show_email %></td>
+        <td><%= user_profile.user %></td>
+        <td><%= link_to 'Show', user_profile %></td>
+        <td><%= link_to 'Edit', edit_user_profile_path(user_profile) %></td>
+        <td><%= link_to 'Destroy', user_profile, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New User profile', new_user_profile_path %>

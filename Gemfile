@@ -3,6 +3,9 @@ ruby '2.1.0'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.0.2'
 gem 'devise'
+gem 'rolify'
+gem 'cancan'
+gem 'friendly_id', '~> 5.0.0'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.0'
 
@@ -32,25 +35,31 @@ end
 gem 'simple_form'
 gem 'country_select'
 
+gem "carrierwave"
+gem "fog"
+gem 'truncate_html'
+gem 'gravatar_image_tag'
+gem 'acts-as-taggable-on'
+gem 'will_paginate', '~> 3.0'
+gem "parsley-rails"
+gem 'sitemap_generator'
+gem 'whenever', :require => false
+gem "nested_form"
+gem 'honeypot-captcha'
+gem 'stripe', '~> 1.8.3'
 group :development do
-  gem "better_errors"
+  gem 'better_errors'
   gem 'sqlite3'
+  gem 'binding_of_caller', :platforms=>[:mri_19, :mri_20, :rbx]
+  gem 'hub', :require=>nil
   gem 'quiet_assets'
+  gem 'rails_layout'
+  gem 'rails_best_practices'
+  gem 'seed_dump'
+  gem 'brakeman', :require => false
+  gem 'railroady'
 end
-
 group :production do
-  gem "pg"
-  gem 'rails_12factor'
+	gem 'pg'
+	gem 'rails_12factor'
 end
-
-# Use ActiveModel has_secure_password
-# gem 'bcrypt-ruby', '~> 3.1.2'
-
-# Use unicorn as the app server
-# gem 'unicorn'
-
-# Use Capistrano for deployment
-# gem 'capistrano', group: :development
-
-# Use debugger
-# gem 'debugger', group: [:development, :test]

@@ -1,0 +1,14 @@
+<%= simple_form_for(@programme_unit) do |f| %>
+  <%= f.error_notification %>
+
+  <div class="form-group">
+    <%= f.association :programme, input_html: { class: 'form-control'} %>
+  </div>
+  <div class="form-group">
+    <%= f.association :unit, input_html: { class: 'form-control'} %>
+  </div>
+
+  <div class="form-group">
+    <%= f.button :submit %>
+  </div>
+<% end %>

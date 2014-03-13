@@ -1,0 +1,29 @@
+<h1>Listing testimonial_questions</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Question</th>
+      <th>Priority</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @testimonial_questions.each do |testimonial_question| %>
+      <tr>
+        <td><%= testimonial_question.question %></td>
+        <td><%= testimonial_question.priority %></td>
+        <td><%= link_to 'Show', testimonial_question %></td>
+        <td><%= link_to 'Edit', edit_testimonial_question_path(testimonial_question) %></td>
+        <td><%= link_to 'Destroy', testimonial_question, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Testimonial question', new_testimonial_question_path %>

@@ -1,0 +1,17 @@
+<%= simple_form_for(@testimonial_answer) do |f| %>
+  <%= f.error_notification %>
+
+  <div class="form-group">
+    <%= f.association :testimonial_question, input_html: { class: 'form-control'} %>
+  </div>
+  <div class="form-group">
+    <%= f.association :testimonial, input_html: { class: 'form-control'} %>
+  </div>
+  <div class="form-group">
+    <%= f.input :answer, input_html: { class: 'form-control'} %>
+  </div>
+
+  <div class="form-group">
+    <%= f.button :submit %>
+  </div>
+<% end %>

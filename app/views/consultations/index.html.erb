@@ -1,0 +1,47 @@
+<h1>Listing consultations</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>User</th>
+      <th>Name</th>
+      <th>Phone</th>
+      <th>Email</th>
+      <th>Message</th>
+      <th>Date time</th>
+      <th>Length in minutes</th>
+      <th>Comfirmed</th>
+      <th>Notes</th>
+      <th>Actions</th>
+      <th>Consultation type</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @consultations.each do |consultation| %>
+      <tr>
+        <td><%= consultation.user %></td>
+        <td><%= consultation.name %></td>
+        <td><%= consultation.phone %></td>
+        <td><%= consultation.email %></td>
+        <td><%= consultation.message %></td>
+        <td><%= consultation.date_time %></td>
+        <td><%= consultation.length_in_minutes %></td>
+        <td><%= consultation.comfirmed %></td>
+        <td><%= consultation.notes %></td>
+        <td><%= consultation.actions %></td>
+        <td><%= consultation.consultation_type %></td>
+        <td><%= link_to 'Show', consultation %></td>
+        <td><%= link_to 'Edit', edit_consultation_path(consultation) %></td>
+        <td><%= link_to 'Destroy', consultation, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Consultation', new_consultation_path %>

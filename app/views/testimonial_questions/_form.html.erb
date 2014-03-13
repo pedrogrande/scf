@@ -1,0 +1,14 @@
+<%= simple_form_for(@testimonial_question) do |f| %>
+  <%= f.error_notification %>
+
+  <div class="form-group">
+    <%= f.input :question, input_html: { class: 'form-control'} %>
+  </div>
+  <div class="form-group">
+    <%= f.input :priority, input_html: { class: 'form-control'} %>
+  </div>
+
+  <div class="form-group">
+    <%= f.button :submit %>
+  </div>
+<% end %>

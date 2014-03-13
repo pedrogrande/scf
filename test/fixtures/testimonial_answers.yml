@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  testimonial_question_id: 
+  testimonial_id: 
+  answer: MyText
+
+two:
+  testimonial_question_id: 
+  testimonial_id: 
+  answer: MyText

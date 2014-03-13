@@ -1,0 +1,59 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>User:</strong>
+  <%= @consultation.user %>
+</p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @consultation.name %>
+</p>
+
+<p>
+  <strong>Phone:</strong>
+  <%= @consultation.phone %>
+</p>
+
+<p>
+  <strong>Email:</strong>
+  <%= @consultation.email %>
+</p>
+
+<p>
+  <strong>Message:</strong>
+  <%= @consultation.message %>
+</p>
+
+<p>
+  <strong>Date time:</strong>
+  <%= @consultation.date_time %>
+</p>
+
+<p>
+  <strong>Length in minutes:</strong>
+  <%= @consultation.length_in_minutes %>
+</p>
+
+<p>
+  <strong>Comfirmed:</strong>
+  <%= @consultation.comfirmed %>
+</p>
+
+<p>
+  <strong>Notes:</strong>
+  <%= @consultation.notes %>
+</p>
+
+<p>
+  <strong>Actions:</strong>
+  <%= @consultation.actions %>
+</p>
+
+<p>
+  <strong>Consultation type:</strong>
+  <%= @consultation.consultation_type %>
+</p>
+
+<%= link_to 'Edit', edit_consultation_path(@consultation) %> |
+<%= link_to 'Back', consultations_path %>
