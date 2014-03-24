@@ -1,4 +1,9 @@
 BasicStarterTemplate::Application.routes.draw do
+  get "calendar" => "calendar#index"
+  get "community" => "community#index"
+  get "about" => "about#index"
+  get "contact" => "contact#index"
+  get "blog" => "blog#index"
   resources :interactions
 
   resources :programme_units

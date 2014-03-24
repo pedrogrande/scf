@@ -10,13 +10,13 @@
         </div>
         <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
-            <li><a href="#home" class="smoothScroll">Home</a></li>
-      <li> <a href="#about" class="smoothScroll"> About</a></li>
-      <li> <a href="#services" class="smoothScroll"> Services</a></li>
-      <li> <a href="#team" class="smoothScroll"> Team</a></li>
-      <li> <a href="#portfolio" class="smoothScroll"> Portfolio</a></li>
-      <li> <a href="#blog" class="smoothScroll"> Blog</a></li>
-      <li> <a href="#contact" class="smoothScroll"> Contact</a></li>
+            <li class="<%= 'active' if current_page?(root_path) %>"><a href="<%= root_path %>">Home</a></li>
+            <li class="<%= 'active' if current_page?(about_path) %>"> <a href="<%= about_path %>"> About</a></li>
+            <li class="<%= 'active' if current_page?(community_path) %>"> <a href="<%= community_path %>"> Community</a></li>
+            <li class="<%= 'active' if current_page?(calendar_path) %>"> <a href="<%= calendar_path %>"> Calendar</a></li>
+            <li class="<%= 'active' if current_page?(blog_path) %>"> <a href="<%= blog_path %>"> Blog</a></li>
+            <li class="<%= 'active' if current_page?(contact_path) %>"> <a href="<%= contact_path %>"> Contact</a></li>
+          </ul>
         </div><!--/.nav-collapse -->
       </div>
     </div>

@@ -13,75 +13,14 @@
   <![endif]-->
   <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Raleway:400,300,700' rel='stylesheet' type='text/css'>
-    <style type="text/css">
-
-          body{
-              background: #000;
-              margin:0;
-              padding-top: 200px;
-          }
-
-          
-          .movie{
-              display:block;
-          }
-
-          .dida{
-              position:fixed;
-              bottom:0;
-              font: 12px/14px Arial, sans-serif;
-              color:white;
-              padding:10px;
-          }
-
-          button{
-              display:block;
-              background:transparent;
-              border:none;
-              color:#FFF;
-              font-size:18px;
-              cursor:pointer;
-          }
-
-          button.command{
-              display:inline-block;
-          }
-
-          button:hover, button.sel{
-              color: #B50937;
-          }
-
-      </style>
-   <%= javascript_include_tag "application" %>
-    <script type="text/javascript">
-
-        jQuery(function(){
-            
-            jQuery("button").not(".command").click(function(){
-                jQuery("button").not(".command").removeClass("sel");
-                jQuery(this).addClass("sel");
-            });
-
-            //debug functions
-            jQuery("#bgndVideo").on("YTPStart", function(){ jQuery("#eventListener").html("YTPStart")});
-            jQuery("#bgndVideo").on("YTPEnd", function(){ jQuery("#eventListener").html("YTPEnd")});
-            jQuery("#bgndVideo").on("YTPPause", function(){ jQuery("#eventListener").html("YTPPause")});
-            jQuery("#bgndVideo").on("YTPBuffering", function(){ jQuery("#eventListener").html("YTPBuffering")});
-
-            jQuery("#bgndVideo").mb_YTPlayer();
-
-        });
-
-    </script>
-
 </head>
 <body data-spy="scroll" data-offset="0" data-target="#navbar-main">
-	<%= render 'layouts/navigation' %>
-		<%= yield %>
-<a id="bgndVideo" href="http://www.youtube.com/watch?v=EGS96s9saL0" class="movie {opacity:.8, isBgndMovie:{width:'window',mute:false}, optimizeDisplay:true, showControls:false, loop: false, quality:'highres',addRaster:true, lightCrop:true}"> </a>
-</div></div></div>
-  
-</div>
-<div class="dida"></div>
+  <%= render 'layouts/navigation' %>
+  <p class="notice"><%= notice %></p>
+       <p class="alert"><%= alert %></p>
+      
+
+    <%= yield %>
+
 </body>
 </html>
